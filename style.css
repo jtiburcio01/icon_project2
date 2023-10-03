@@ -41,6 +41,12 @@ img {
   padding-bottom: auto;
 }
 
+.callout {
+  font-family: 'Archivo', sans-serif;
+  font-weight: 600;
+    margin: 15px;
+}
+
 .container {
   font-family: 'Zilla Slab', serif;
   display: block;
@@ -123,10 +129,21 @@ img {
   margin:auto;
 }
 
-.flex {
+.callout{
+ display:flex;
+  margin:auto;
+  flex-direction:row;
+  font-size: 20px
+}
+
+.iconcap{
   display:flex;
-  justify-content: space-around;
-  flex-direction: row;
+  margin-top: 300px;
+}
+
+.flex {
+display:flex;
+justify-content: center;
 }
 
 .flex > div {

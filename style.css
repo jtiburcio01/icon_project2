@@ -1,0 +1,151 @@
+/*
+This is a good layout for a mobile-first CSS template.
+Following this flow will minimize the number of styles you need to write and will ensure you are thinking, designing and developing mobile-first.
+Most of your styles get written like standard CSS, but for your mobile presentation. Generally speaking, a good mobile presention will stretch out nicely for larger screens.
+
+Sometimes, when we stretch out to larger screens, we need to make minor tweaks for the larger devices -- you can make these tweaks in the tablet media query, or if the issue exists on desktop only, the desktop media query.
+You will find this is far easier than the opposite task of using CSS to cram your desktop experience into a mobile device.
+*/
+/*********************************************************************
+ LOADS IN A NICE RESET TO ENSURE ALL BROWSERS HAVE THE SAME BASE STYLES
+*********************************************************************/
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css');
+
+/*********************************************************************
+  YOUR MOBILE/BASE STYLES GO HERE
+*********************************************************************/
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    /* Sets default font-size to 16px, ensuring 1em = 16px; */
+    font-size: 16px;
+    background-color:#E0E2D7;
+
+}
+
+h1 {
+  font-family: 'Archivo Black', sans-serif;
+    margin: 15px;
+}
+
+h3 {
+  font-family: 'Archivo', sans-serif;
+    margin: 15px;
+}
+
+img {
+  display: block;
+  width: 100%;
+  padding-bottom: auto;
+}
+
+.container {
+  font-family: 'Zilla Slab', serif;
+  display: block;
+  max-width: 800px;
+  margin: 15px;
+
+}
+
+.photo{
+  font-family: 'Zilla Slab', serif;
+  padding: 0px;
+}
+
+.sources{
+  font-family: 'Zilla Slab', serif;
+  display: block;
+  margin: 15px;
+  justify-content: center;
+}
+
+.byline{
+  font-family: 'Archivo', sans-serif;
+  font-weight: 200;
+  font-size: 14px;
+    margin: 15px;
+}
+
+.dateline{
+  font-family: 'Archivo', sans-serif;
+  font-weight: 200;
+  font-size: 14px;
+  margin: 15px;
+}
+
+.iconcap {
+  font-family: 'Zilla Slab', serif;
+  margin: 15px;
+}
+
+.caption {
+  font-style:italic;
+  font-size:14px;
+  margin: 15px;
+  font-family: 'Zilla Slab', serif;
+}
+
+.flex {
+  background-color:#EFF1E6;
+  padding: 1px;
+
+}
+
+
+
+
+/* customize webpage here (change background color, etc.) */
+
+
+/*********************************************************************
+  YOUR TABLET/DESKTOP STYLES GO HERE
+*********************************************************************/
+@media(min-width: 681px) {
+    /* Any adjustments for tablets and larger go here.
+    Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+
+/* put Flex Box styling here */
+
+.top {
+  margin-left: 60px;
+}
+
+.photo{
+  display:block;
+  margin: 75px;
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+.container{
+  margin:auto;
+}
+
+.flex {
+  display:flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.flex > div {
+  flex-basis: 30%;
+  margin: 25px;
+}
+
+div{
+  display: block;
+  width: auto;
+  max-width: 2000px;
+}
+
+
+
+/*********************************************************************
+  YOUR DESKTOP-ONLY STYLES GO HERE
+*********************************************************************/
+@media(min-width: 729px) {
+    /* Any adjustments for desktop and larger go here.
+    Note these styles will be applied to anything 729px or larger -- so desktop */
+}
